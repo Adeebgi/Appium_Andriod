@@ -1,0 +1,29 @@
+ How to find App Package and App Activity of your Android App
+
+
+
+1. Firstly, connect your Android device or emulator to the PC/Mac and open the App whose details you want to inspect 
+i.e Whatsapp.
+
+ 
+
+2. Open a Command Prompt or Terminal window and use ‘adb devices‘ command to see the list of connected devices. 
+A list of Android devices connected to the Computer is displayed along with their device IDs as shown below:
+or now, we have only one device connected to this System.
+
+
+
+3. Finally, type the below-given command to get the information about the currently open application, 
+i.e in our case, WhatsApp.
+
+
+
+For Mac/Linux:
+
+adb shell dumpsys window | grep -E 'mCurrentFocus' 
+For Windows:
+
+adb shell dumpsys window | find "mCurrentFocus"
+
+Here, the part before the '/' character i.e com.whatsapp is the Package name and the part after
+ that i.e com.whatsapp.HomeActivity is the Activity name.

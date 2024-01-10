@@ -1,0 +1,10 @@
+
+//to start a session you give the following key value to the ispector 
+{
+1. "app": "D://ForAppiumTestingProject//appium//src//test//java//Utilities//ApiDemos-debug.apk",
+4. " automationName"; "UIAutomator2",
+2. "deviceName":"Mesbah",
+"eventTimings": true'
+3. "platformName": "android"
+
+}
